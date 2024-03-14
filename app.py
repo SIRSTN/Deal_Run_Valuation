@@ -51,10 +51,10 @@ def api_valuate_deals(keyword, date, price):
 
 def run_valuation(keyword):
     start_date = datetime(year=2023, month=1, day=2)
-    end_date = datetime(year=2024, month=3, day=12)
+    end_date = datetime(year=2024, month=3, day=13)
     delta = timedelta(days=1)
-
     current_date = start_date
+
     while current_date <= end_date:
         print(f"Valuating {keyword} for {current_date.strftime('%d-%m-%Y')}...")
         datetime_str = current_date.strftime('%Y-%m-%dT00:00:00')
